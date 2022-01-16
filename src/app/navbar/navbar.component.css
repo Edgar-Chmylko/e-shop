@@ -1,0 +1,28 @@
+.navbar {
+  margin: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(194, 188, 188);
+}
+.menuItems {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15%;
+}
+.logo {
+  border-radius: 15px;
+  height: 80px;
+  width: 80px;
+  justify-self: flex-start;
+}
+
+.searchBar {
+  width: 40%;
+}
+
+.shoppingCart:hover {
+  cursor: pointer;
+}
