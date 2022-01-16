@@ -1,0 +1,4 @@
+.sideMenu {
+  grid-column-start: 1;
+  grid-column: span 1;
+}

@@ -1,0 +1,4 @@
+.contentView {
+  grid-column-start: 2;
+  grid-column: span 2;
+}

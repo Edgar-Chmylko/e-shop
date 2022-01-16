@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(194, 188, 188);
+  background-color: rgb(209, 226, 252);
 }
 .menuItems {
   display: flex;
@@ -13,6 +13,7 @@
   width: 15%;
 }
 .logo {
+  cursor: pointer;
   border-radius: 15px;
   height: 80px;
   width: 80px;
@@ -23,6 +24,13 @@
   width: 40%;
 }
 
-.shoppingCart:hover {
+.navbarIcon {
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.navbarIcon:hover {
+  background-color: white;
+  padding: 12px;
+  border-radius: 3px;
 }
