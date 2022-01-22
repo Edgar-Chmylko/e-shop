@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CategoryListComponent } from './components/home-page/category-list/category-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { AdminPageComponent } from './component/admin-page/admin-page.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MatIcon, MatIconModule } from '@angular/material/icon';
     HomePageComponent,
     NavbarComponent,
     CategoryListComponent,
+    AdminPageComponent,
   ],
   imports: [
     BrowserModule,
