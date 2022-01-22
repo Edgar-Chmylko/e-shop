@@ -11,11 +11,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CategoryListComponent } from './components/home-page/category-list/category-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
-import { AdminMainPageComponent } from './component/admin/mainpage/mainpage.component';
-import { HeaderComponent } from './component/admin/header/header.component';
-import { FooterComponent } from './component/admin/footer/footer.component';
-import { ProductlistComponent } from './component/admin/productlist/productlist.component';
-import { ProductaddComponent } from './component/admin/productadd/productadd.component';
+import { HeaderComponent } from './components/admin/header/header.component';
+import { FooterComponent } from './components/admin/footer/footer.component';
+import { AdminPageComponent } from './components/admin/mainpage/mainpage.component';
+import { ProductlistComponent } from './components/admin/productlist/productlist.component';
+import { ProductaddComponent } from './components/admin/productadd/productadd.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +24,11 @@ import { ProductaddComponent } from './component/admin/productadd/productadd.com
     HomePageComponent,
     NavbarComponent,
     CategoryListComponent,
-    AdminMainPageComponent,
     HeaderComponent,
     FooterComponent,
+    AdminPageComponent,
     ProductlistComponent,
-    ProductaddComponent,
+    ProductaddComponent
   ],
   imports: [
     BrowserModule,
