@@ -1,0 +1,14 @@
+.category-list {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.category-list-item {
+  font-weight: 200;
+  padding: 15px;
+}
+
+.category-list-item:hover {
+  text-decoration: underline;
+}

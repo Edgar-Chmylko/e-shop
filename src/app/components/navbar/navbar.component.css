@@ -1,0 +1,36 @@
+.navbar {
+  margin: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(209, 226, 252);
+}
+.menuItems {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 15%;
+}
+.logo {
+  cursor: pointer;
+  border-radius: 15px;
+  height: 80px;
+  width: 80px;
+  justify-self: flex-start;
+}
+
+.searchBar {
+  width: 40%;
+}
+
+.navbarIcon {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navbarIcon:hover {
+  background-color: white;
+  padding: 12px;
+  border-radius: 3px;
+}
