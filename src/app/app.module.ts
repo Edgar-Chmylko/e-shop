@@ -11,7 +11,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CategoryListComponent } from './components/home-page/category-list/category-list.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
-import { AdminPageComponent } from './component/admin-page/admin-page.component';
+import { AdminMainPageComponent } from './component/admin/mainpage/mainpage.component';
+import { HeaderComponent } from './component/admin/header/header.component';
+import { FooterComponent } from './component/admin/footer/footer.component';
+import { ProductlistComponent } from './component/admin/productlist/productlist.component';
+import { ProductaddComponent } from './component/admin/productadd/productadd.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { AdminPageComponent } from './component/admin-page/admin-page.component'
     HomePageComponent,
     NavbarComponent,
     CategoryListComponent,
-    AdminPageComponent,
+    AdminMainPageComponent,
+    HeaderComponent,
+    FooterComponent,
+    ProductlistComponent,
+    ProductaddComponent,
   ],
   imports: [
     BrowserModule,
