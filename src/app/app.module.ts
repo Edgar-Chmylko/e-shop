@@ -16,6 +16,18 @@ import { FooterComponent } from './components/admin/footer/footer.component';
 import { AdminPageComponent } from './components/admin/mainpage/mainpage.component';
 import { ProductlistComponent } from './components/admin/productlist/productlist.component';
 import { ProductaddComponent } from './components/admin/productadd/productadd.component';
+import { RouterModule, Routes } from '@angular/router';
+import { AlertModule } from 'ngx-bootstrap/alert';
+import { HttpClientModule } from '@angular/common/http';
+
+
+const appRoutes: Routes = [
+  { path: '', component: AdminPageComponent },
+  { path: 'adminpage', component: AdminPageComponent },
+  { path: 'productlist', component: ProductlistComponent },
+  { path: 'productadd', component: ProductaddComponent },
+  { path: 'productadd/:id', component: ProductaddComponent }
+];
 
 @NgModule({
   declarations: [
@@ -38,6 +50,9 @@ import { ProductaddComponent } from './components/admin/productadd/productadd.co
     MatInputModule,
     MatBadgeModule,
     MatIconModule,
+    RouterModule.forRoot(appRoutes),
+    AlertModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
