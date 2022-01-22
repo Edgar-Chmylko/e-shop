@@ -1,4 +1,16 @@
-.contentView {
-  grid-column-start: 2;
-  grid-column: span 2;
+mat-grid-tile {
+  box-shadow: 5px 5px 15px rgb(209, 226, 252);
+  border-radius: 5px;
+  transition: 0.3s;
+  scale: 0.9;
+}
+mat-grid-tile:hover {
+  scale: 0.95;
+  box-shadow: 1px 1px 20px rgb(112, 169, 255);
+  cursor: pointer;
+}
+
+mat-card {
+  height: 100%;
+  width: 100%;
 }
