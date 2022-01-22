@@ -5,7 +5,7 @@ mat-grid-tile {
   scale: 0.9;
 }
 mat-grid-tile:hover {
-  scale: 0.95;
+  scale: 0.92;
   box-shadow: 1px 1px 20px rgb(112, 169, 255);
   cursor: pointer;
 }
