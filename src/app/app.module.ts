@@ -14,6 +14,7 @@ import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { ContentViewModalComponent } from './components/home-page/content-view-modal/content-view-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ContentViewModalComponent } from './components/home-page/content-view-m
     MatIconModule,
     MatGridListModule,
     MatCardModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
