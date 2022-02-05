@@ -16,6 +16,10 @@ export class CategoryService {
     return this.categories;
   }
 
+  delete(id: number) {
+    this.api.delete("/categories/" + id).subscribe(() => this.loadData());
+  }
+
   private loadData() {
     this.api.get("/categories").subscribe((result: any) => this.categories.data = result.data);
   }

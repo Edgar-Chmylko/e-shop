@@ -17,4 +17,8 @@ export class AdminPageComponent implements OnInit {
     this.dataSource = this.listService.getData();
   }
 
+  deleteCategory(id: number) {
+    this.listService.delete(id);
+  }
 }
+
