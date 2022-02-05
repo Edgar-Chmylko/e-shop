@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ListService } from 'src/app/services/list.service';
+import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
   selector: 'app-admin-page',
@@ -7,16 +7,14 @@ import { ListService } from 'src/app/services/list.service';
   styleUrls: ['./admin-page.component.css'],
 })
 export class AdminPageComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'title', 'actions'];
+  displayedColumns: string[] = ['position', 'title'];
   dataSource: Category[] = [];
 
-
-  constructor(private listService: ListService) {}
+  constructor(private listService: CategoryService) {}
 
   ngOnInit(): void {
     this.listService.getData().subscribe((result) => {
       this.dataSource = result;
     });
   }
-
 }
