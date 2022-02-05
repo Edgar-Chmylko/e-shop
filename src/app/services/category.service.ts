@@ -1,21 +1,22 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { MatTableDataSource } from '@angular/material/table';
 import { ApiService } from './api.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CategoryService {
-  private data: Category[] = [];
+
+  private categories: MatTableDataSource<Category> = new MatTableDataSource<Category>();
 
   constructor(private api: ApiService) {}
 
-  getData(): Observable<Category[]> {
+  getData(): MatTableDataSource<Category> {
     this.loadData();
-    return of(this.data);
+    return this.categories;
   }
 
   private loadData() {
-    this.api.get("/categories").subscribe((result: any) => this.data.push(...result.data));
+    this.api.get("/categories").subscribe((result: any) => this.categories.data = result.data);
   }
 }
