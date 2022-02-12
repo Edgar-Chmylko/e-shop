@@ -1,0 +1,48 @@
+.closeBtn {
+  float: right;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  scroll-behavior: smooth;
+}
+
+.modal-product-name {
+  justify-self: center;
+  align-self: center;
+  padding-right: 50px;
+  grid-column: 4;
+}
+
+.modal-product-description {
+  width: 70%;
+  justify-self: center;
+  align-self: flex-start;
+  grid-column: 4;
+  grid-row: 2;
+}
+.modal-product-picture {
+  height: 100%;
+  width: 70%;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 4;
+}
+
+.modal-content-price {
+  grid-column: 4;
+  grid-row: 3;
+  align-self: flex-end;
+  justify-self: center;
+}
+.modal-button {
+  grid-column: 4;
+  grid-row: 4;
+  align-self: flex-end;
+  justify-self: center;
+  padding: 5px 5px;
+}
