@@ -12,11 +12,15 @@ import { CategoryListComponent } from './components/home-page/category-list/cate
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminPageComponent } from './components/admin-page/admin-page.component';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { ContentViewModalComponent } from './components/home-page/content-view-modal/content-view-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,7 @@ import { AdminPageComponent } from './components/admin-page/admin-page.component
     HomePageComponent,
     NavbarComponent,
     CategoryListComponent,
+    ContentViewModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,10 @@ import { AdminPageComponent } from './components/admin-page/admin-page.component
     MatIconModule,
     RouterModule,
     AlertModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule,
+    MatCardModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

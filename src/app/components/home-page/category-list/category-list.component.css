@@ -1,7 +1,6 @@
 .category-list {
   display: flex;
   justify-content: space-evenly;
-  cursor: pointer;
 }
 
 .category-list-item {
@@ -11,4 +10,5 @@
 
 .category-list-item:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
