@@ -1,38 +1,30 @@
 import { ContentViewModalComponent } from './../content-view-modal/content-view-modal.component';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatTableDataSource } from '@angular/material/table';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-content-view',
   templateUrl: './content-view.component.html',
   styleUrls: ['./content-view.component.css'],
 })
-export class ContentViewComponent {
-  constructor(public modal: MatDialog) {}
-  productName = 'Product Name';
-  productImage = '/assets/logo.png';
-  productPrice = '4.20$';
-  productList = [
-    {
-      productName: this.productName,
-      productPrice: this.productPrice,
-      productImage: this.productImage,
-    },
-    {
-      productName: this.productName,
-      productPrice: this.productPrice,
-      productImage: this.productImage,
-    },
-    {
-      productName: this.productName,
-      productPrice: this.productPrice,
-      productImage: this.productImage,
-    },
-  ];
-  openModal() {
+export class ContentViewComponent implements OnInit {
+  constructor(
+    public modal: MatDialog,
+    private productService: ProductService
+  ) {}
+  products: MatTableDataSource<Product> = new MatTableDataSource<Product>();
+
+  ngOnInit(): void {
+    this.products = this.productService.getData();
+  }
+
+  openModal(product: Product) {
     this.modal.open(ContentViewModalComponent, {
       height: '76%',
       width: '100%',
+      data: product,
     });
   }
 }

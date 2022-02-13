@@ -1,8 +1,10 @@
 <mat-icon class="closeBtn">close</mat-icon>
 <div class="modal-content">
-  <img class="modal-product-picture" src="{{ productImage }}" />
-  <h2 mat-dialog-title class="modal-product-name">{{ productName }}</h2>
-  <h4 mat-dialog-content class="modal-product-description">{{ productDescription }}</h4>
-  <h2 class="modal-content-price">{{ productPrice }}</h2>
-  <button class="modal-button" mat-raised-button color="warn">Add to cart</button>
+  <img class="modal-product-picture" [src]="product.image" />
+  <h2 mat-dialog-title class="modal-product-name">{{ product.title }}</h2>
+  <h4 mat-dialog-content class="modal-product-description"></h4>
+  <h2 class="modal-content-price">{{ product.price }}</h2>
+  <button class="modal-button" mat-raised-button color="warn">
+    Add to cart
+  </button>
 </div>
