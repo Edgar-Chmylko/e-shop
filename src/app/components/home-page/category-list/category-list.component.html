@@ -1,3 +1,5 @@
 <div class="category-list">
-  <h3 *ngFor="let arr of arr" class="category-list-item">{{ this.arr }}</h3>
+  <h3 *ngFor="let category of categories.data" class="category-list-item">
+    {{ category.title }}
+  </h3>
 </div>

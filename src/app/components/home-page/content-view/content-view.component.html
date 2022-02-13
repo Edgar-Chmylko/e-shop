@@ -1,12 +1,13 @@
 <div class="content-view">
   <mat-grid-list cols="3" rowHeight="1:1">
-    <mat-grid-tile *ngFor="let productList of productList" (click)="openModal()">
+    <mat-grid-tile
+      *ngFor="let product of products.data"
+      (click)="openModal(product)"
+    >
       <mat-card>
-        <mat-card-title>{{ productList.productName }}</mat-card-title>
-        <mat-card-content class="card-content">
-          Price : {{ productList.productPrice }}
-        </mat-card-content>
-        <img mat-card-image src="{{ productList.productImage }}" />
+        <mat-card-title>{{ product.title }}</mat-card-title>
+        <mat-card-content class="card-content"> Price : </mat-card-content>
+        <img mat-card-image src="{{ product.image }}" />
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
