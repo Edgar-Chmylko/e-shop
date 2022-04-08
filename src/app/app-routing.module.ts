@@ -5,7 +5,7 @@ import { AdminPageComponent } from './components/admin-page/admin-page.component
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'admin', component: AdminPageComponent}
+  { path: 'admin', component: AdminPageComponent} //{ path: 'admin',canActivate: [AuthGuard],component: AdminPageComponent,}
 ];
 
 @NgModule({
